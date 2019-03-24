@@ -27,7 +27,7 @@ in default, the program would use the data in `data.csv`, as user does not input
 	$ python3.5 main.py
 ```
 And output image would like:
-![GitHub Logo](/image/sample.png)
+<img src="https://github.com/colorzzr/indoc_research/image/sample.png" />
 
 
 # Function
@@ -35,17 +35,17 @@ And output image would like:
 Below are the detail of each function
 ---
 
-## `def do_polt(file_name: str)`:
+## def do_polt(file_name: str):
 
 The function take the user input calls all functions below to process the data in csv file and output the png for the user
 ---
 
-## `def read_csv_file(file_name: str) -> List[List[str]]`:
+## def read_csv_file(file_name: str) -> List[List[str]]:
 
 function would take the arg in the terminal and open it for the function `parse_csv_data`
 ---
 
-## `def parse_csv_data(data:List[List[str]]) -> dict`:
+## def parse_csv_data(data:List[List[str]]) -> dict:
 
 function read line by line throughout the file and put the required data into the dictionary. the key of dictionary is the class of the flower. The format of scv must follow below:
 
@@ -62,11 +62,11 @@ function read line by line throughout the file and put the required data into th
 ---
 
 
-## `def proccess_data(data:dict) -> (List[float], List[float], List[str])`:
+## def proccess_data(data:dict) -> (List[float], List[float], List[str]):
 
 Function takes the analysised data.It calculate and return the array containning the average of sepal length, petal length and corresponding to each class
 
-## `def plot_graph(sepal_arr:List[float], petal_arr:List[float], class_arr:List[str])`:
+## def plot_graph(sepal_arr:List[float], petal_arr:List[float], class_arr:List[str]):
 
 Function using `python-matplotlib` to plot the graph and output png file called `data.png`
 
