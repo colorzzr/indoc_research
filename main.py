@@ -1,5 +1,6 @@
 import csv
 import matplotlib.pyplot as plt
+import sys
 from typing import List
 
 
@@ -44,7 +45,8 @@ def parse_csv_data(data:List[List[str]]) -> dict:
 
     return format_data
 
-
+# loop over what we fetch in csv and return the average of sepal length
+# petal length and corrospond to class
 def proccess_data(data:dict) -> (List[float], List[float], List[str]):
     sepal_arr = []
     petal_arr = []
@@ -122,16 +124,29 @@ def plot_graph(sepal_arr:List[float], petal_arr:List[float], class_arr:List[str]
     plt.savefig("data.png")
 
 
-def main():
+def do_polt(file_name: str):
+    # read file from target csv
+    data = read_csv_file(file_name)
 
-
-    data = read_csv_file("data.csv")
+    # sort the data for three class
     format_data = parse_csv_data(data)
+
+    # get the average data
     sepal_arr, petal_arr, class_arr = proccess_data(format_data)
+
+    # use average data to plot
     plot_graph(sepal_arr, petal_arr, class_arr)
 
 
+def main():
+    # Default file
+    file_name = "data.csv"
+    if len(sys.argv) > 1:
+        file_name = sys.argv[1]
 
+
+    do_polt(file_name)
+    print(sys.argv)
 
 
 if __name__ == '__main__':
