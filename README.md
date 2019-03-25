@@ -27,7 +27,7 @@ in default, the program would use the data in `data.csv`, as user does not input
 	$ python3.5 main.py
 ```
 And output image would like:
-<img src="/blob/master/image/sample.png" />
+![alt text](image/sample.png)
 
 
 # Function
