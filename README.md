@@ -52,10 +52,9 @@ function would take the arg in the terminal and open it for the function `parse_
 
 function read line by line throughout the file and put the required data into the dictionary. the key of dictionary is the class of the flower. The format of scv must follow below:
 
-
-	| sepal_length | sepal_width | petal_length | petal_width | class |
-	|--------------|-------------|--------------|-------------|-------|
-	| 	  float    |    float    | 	   float    | 	  float   |  str  |
+| sepal_length | sepal_width | petal_length | petal_width | class |
+|--------------|-------------|--------------|-------------|-------|
+| 	  float    |    float    | 	   float    | 	  float   |  str  |
 
 	- Attribute 1: sepal length in cm
 	- Attribute 2: sepal width in cm
