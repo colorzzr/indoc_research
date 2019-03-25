@@ -1,7 +1,7 @@
 
 # Analysis Data
 
-This is the program take the csv file that contain the sepal length, sepal width, petal length, petal width and flower class. It outputs the average sepal length and petal length of each class with a plotted graph
+This is the program take the csv file that contain the sepal length, sepal width, petal length, petal width and flower class and outputs the average sepal length and petal length of each class with a plotted graph
 
 
 # Getting Start
